@@ -55,6 +55,29 @@ public class ContactServiceMock extends MockTest {
         verifyAll();
     }
 
+    @Test
+    public void testSupprimerContactOk() throws ContactException{
+        //Phase d'enregistrement des comportements
+        String nom = "ContactOk";
+        String tel = "01213456789";
+        EasyMock.expect(dao.isContactExiste(nom)).andReturn(false);
+
+        Capture<Contact> capture = EasyMock.newCapture();
+        Contact contact = EasyMock.capture(capture);
+        dao.creerContact(contact);
+        EasyMock.expect(dao.isContactExiste(nom)).andReturn(true);
+        EasyMock.expect(dao.recupererContact(nom)).andReturn(contact);
+        dao.supprimerContact(contact);
+        //Fin de l'enregistrement
+        replayAll();
+
+        //Appel de la methode
+        service.creeContact(nom,tel);
+        service.supprimerContact(nom);
+        //Vérification
+        verifyAll();
+    }
+
     @Test(expected = ContactException.class)
     public void testDeleteContactNonExistant() throws ContactException{
         //Phase d'enregistrement des comportements
