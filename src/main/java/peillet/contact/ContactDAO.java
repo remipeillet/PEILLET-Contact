@@ -3,6 +3,7 @@ package peillet.contact;
 import peillet.contact.exception.ContactException;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Class contactDAO.
@@ -12,7 +13,7 @@ public class ContactDAO implements IContactDAO {
     /**
      * Liste des contacts.
      */
-    private ArrayList<Contact> contacts;
+    private List<Contact> contacts;
 
     /**
      * Constructeur.
@@ -25,7 +26,7 @@ public class ContactDAO implements IContactDAO {
      * getter des contacts.
      * @return la liste des contacts.
      */
-    public ArrayList<Contact> getContacts() {
+    public List<Contact> getContacts() {
         return contacts;
     }
 
