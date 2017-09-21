@@ -3,7 +3,6 @@ package peillet.contact;
 
 import peillet.contact.exception.ContactException;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public interface IContactDAO {
