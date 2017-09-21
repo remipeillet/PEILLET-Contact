@@ -9,7 +9,7 @@ import org.easymock.TestSubject;
 import org.junit.Test;
 import org.testng.Assert;
 
-public class ContactServiceMock extends MockTest {
+public class ContactServiceMockTest extends MockTest {
 
     @TestSubject
     private ContactService service =new ContactService();
