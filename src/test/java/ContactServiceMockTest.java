@@ -1,7 +1,7 @@
-import LPS2IMA.PEILLET.Contact.Contact;
-import LPS2IMA.PEILLET.Contact.ContactService;
-import LPS2IMA.PEILLET.Contact.Exception.ContactException;
-import LPS2IMA.PEILLET.Contact.IContactDAO;
+import peillet.contact.Contact;
+import peillet.contact.ContactService;
+import peillet.contact.exception.ContactException;
+import peillet.contact.IContactDAO;
 import org.easymock.Capture;
 import org.easymock.EasyMock;
 import org.easymock.Mock;

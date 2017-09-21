@@ -1,7 +1,7 @@
-package LPS2IMA.PEILLET.Contact;
+package peillet.contact;
 
 
-import LPS2IMA.PEILLET.Contact.Exception.ContactException;
+import peillet.contact.exception.ContactException;
 
 import java.util.ArrayList;
 

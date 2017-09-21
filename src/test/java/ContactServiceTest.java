@@ -1,5 +1,5 @@
-import LPS2IMA.PEILLET.Contact.ContactService;
-import LPS2IMA.PEILLET.Contact.Exception.ContactException;
+import peillet.contact.ContactService;
+import peillet.contact.exception.ContactException;
 import org.junit.Before;
 import org.junit.Test;
 

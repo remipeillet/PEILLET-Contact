@@ -1,4 +1,4 @@
-package LPS2IMA.PEILLET.Contact.Exception;
+package peillet.contact.exception;
 
 public class ContactException extends Exception{
     public ContactException(String message){
