@@ -19,7 +19,7 @@ public class ContactDAO implements IContactDAO {
      * Constructeur.
      */
     public ContactDAO() {
-        this.contacts = new ArrayList<Contact>();
+        this.contacts = new ArrayList<>();
     }
 
     /**
